@@ -1,0 +1,122 @@
+/*Mise en forme de la page général*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+* {
+  font-family: "Lato", sans-serif;
+  font-weight: 800;
+}
+
+body {
+  background-image: url(img/other/black_island.jpg);
+background-size: cover;
+background-attachment: fixed;
+background-position:center ;
+text-align: center;
+
+}
+
+.player-content{
+  
+ display: flex;
+
+flex-wrap: wrap;
+
+
+
+}
+
+#playerOne{
+  flex-basis: 25%;
+}
+#playerTwo{
+  flex-basis:25%;
+}
+#img_dice{
+  flex-basis:50% ;
+}
+h6{
+  
+  margin-top: 2%;
+}
+
+
+/*Position de l'image Dé*/
+
+#dice{
+  margin-top: 200px;
+}
+
+/*Joueur */
+h1{
+font-size: 48px;
+}
+h2,
+h3{
+  font-size: 32px;
+}
+h3{
+  margin-top: 350px;
+  }
+  
+
+/* Résultat */
+#tamporaryDomageOne,
+#tamporaryDomageTwo,
+#lifePointPlayerOne,
+#lifePointPlayerTwo{
+  font-size: 50px;
+}
+
+
+
+
+/* Modal*/
+
+.modal-title{
+margin-top: -34px;
+margin-left: 125px;
+font-size: 36px;
+
+}
+
+.modal-content{
+background-color: brown;
+border-radius: 10%;
+margin-left: -20px;
+padding: 20px;
+font-size: 14px;
+height: 700px;
+width: 459px;
+color: white; text-shadow: black 0.2em 0.2em 0.3em
+
+}
+
+.close {
+color: white;
+
+margin-top: 45px;
+float: right;
+
+}
+
+.close:hover,
+.close:focus {
+color: rgb(255, 255, 255);
+cursor: pointer;
+}
+
+h4{
+font-size: 35px;
+}
+/*--  end Rules Modal Style --*/
+
+#btn_rollandattak{
+  margin-top: 3vh;
+}
+.btn-success{
+  margin-top: 35px;
+}
+  h1,
+  .player-content,
+  h6{
+    color: white;
+  }

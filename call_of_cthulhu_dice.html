@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=" voici mon évaluation  d'entrenement : Dynamiser vos sites web avec Javascript ! ">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="ccsDesktop.css">
+<link rel="stylesheet" href="cssMobile.css">
+
+   
+    <title>Call_of_cthulhu_dice</title>
+</head>
+
+<body>
+  
+  <header>
+    <button  type="button" class="btn btn-dark" id="newgame"> Nouvelle partie  </button>
+
+    <!--début de la modal-->
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-danger" id="btnRules" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Règle du jeu :
+        </button>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Scénario</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        
+          <p id="scenario">  3 septembre 1924 Edward Pierce est parti en expédition dans le sud de l'océan Pacifique,
+            manque de chance sa boussole lui a fait défaut et il est en réalité dans la zone la plus désertique de ce monde "The Black Island".</p>
+            <h4>Face à Cthulhu il devra le vaincre en suivant les règles suivantes :</h4>
+            
+            <ul>
+              <li>
+                
+                Cthulhu et Edward Pierce possède un score (Dégâts temporaires) et un score (Point de vie).
+                À chaque tour, le joueur à son score (Dégâts temporaires) initialisé à 0 et peut lancer un dé autant de fois qu'il le souhaite.
+                Le résultat d’un lancer est ajouté aux dégâts temporaires.
+                Lors de son tour, le joueur peut décider à tout moment de:
+              </li>
+            </br>
+            
+            <li>Cliquer sur l’option “Attaque !”, qui permet d’envoyer les points de Dégâts temporaires vers les Points de vie de son adversaire. 
+              Ce sera alors le tour de l’autre joueur.</li>
+              <li>Lancer le dé. S’il obtient un 1, son score (Dégâts temporaires) est perdu et c’est la fin de son tour.</li>
+              <li>Le premier joueur qui atteint 0 point de vie aura perdu la partie.</li>
+            </ul>
+          
+      </div>
+     
+    </div>
+  </div>
+</div>
+        <!-- modal de défaite -->
+
+     
+    
+          
+          
+          <!--fIN DE LA MODAL-->
+          
+          
+          
+          <!-- debut-->
+          
+        </header>
+      <section>
+        <article >
+          <div class="player-content">
+
+            <div id="playerOne" class="firstAttack ">
+              <h1> Edward Pierce</h1>
+              <h2>Dégâts temporaires:</h2>
+              <p id="tamporaryDomageOne">0</p>
+            
+              <h3>Point de vie :</h3>
+            <p id="lifePointPlayerOne">1000</p>
+            </div>
+            <div id="img_dice">
+              <p>
+                <img src="img\dice.png" alt="dice" id="dice" width="150px" height="150" >
+              </p>
+            </div>     
+           
+            <div id="playerTwo" >
+              <h1> Cthulhu</h1>
+              <h2>Dégâts temporaires:</h2>
+              <p id="tamporaryDomageTwo">0</p>
+                           <h3>Point de vie :</h3>
+              <p id="lifePointPlayerTwo">1000</p>
+            </div>
+        
+          </div>
+                    
+            
+          </article>
+        </section>
+        <nav>
+          <div id="endgame"></div>
+          <div id="btn_rollandattak">
+            <button  type="button" class="btn btn-danger" id="rollDice"> Lancé le dé  </button>
+            <br>
+            <button class="btn btn-success" id="attack">Attaque !</button>
+          </div>
+        
+        
+
+        </nav>
+        </nav>
+        <!-- fin-->
+        <!--debut -->
+        
+          
+        
+   
+    <!-- fin -->
+    <!--début-->
+        
+        <footer>
+          <div class="container-footer">
+            <div class="row">
+                <div class="col lg-3">
+                    <h6> <b>© Copyright Michael Bensaude</b> </h6>
+                  
+                </div>
+            </div>
+          </div>
+          <!--faire une modal pour le footer-->
+        </footer>
+        <!--fin-->
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="variable.js"></script>
+<script src="script.js"></script>
+
+</html>

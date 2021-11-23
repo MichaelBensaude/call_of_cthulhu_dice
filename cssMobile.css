@@ -1,0 +1,130 @@
+
+@media screen and (max-width : 2560px) and(orientation : landscape) /*macbook air */ {
+  #lifePointPlayerOne,
+  #tamporaryDomageOne,
+  #lifePointPlayerTwo,
+  #tamporaryDomageTwo{
+    font-size: 24px;
+  }
+}
+@media screen and (max-width : 1366px) and (orientation : landscape){/*ipad pro*/
+  h6{
+    font-size: 12px;
+    margin-top: 1vh;
+   }
+ 
+  }
+  @media screen and (max-width : 1024px) and (orientation : landscape){/*ipad*/
+    #btn_rollandattak{
+      margin-top: 10vh;
+    } 
+    h1{
+      font-size: 38px;
+    }
+    h2,h3{
+      font-size: 22px;
+      
+    }
+    h3{
+      margin-top: 150px;
+  }
+  #dice{
+    margin-top: 100px;
+   
+  }
+  .btn-success{
+    margin-top: 25px;
+  }
+  h6{
+    margin-top: 10vh;
+  }
+  @media screen and (max-width : 812px) and (orientation: landscape){/*iphone X*/
+nav{
+  margin-top: -123px;
+}
+    .btn-success{
+      margin-top: 12vh;
+    }
+    h1{
+      font-size: 18px;
+      margin-top: 12px;
+    }
+    h2,h3{
+      font-size: 12px;
+      
+    }
+    h3{
+      margin-top: 150px;
+    }
+    .modal-title{
+      margin-left: 200px;
+      font-size: 36px;
+      
+      }
+      
+      .modal-content{
+      border-radius: 5%;
+      margin-left: -60px;
+      font-size: 14px;
+      height: 500px;
+      width: 659px;
+    
+      
+      }
+    .btn{
+      font-size: 6px;
+    }
+    #lifePointPlayerOne,
+    #tamporaryDomageOne,
+    #lifePointPlayerTwo,
+    #tamporaryDomageTwo{
+      font-size: 12px;
+    }
+    #dice{
+      margin-top: 100px;
+      width: 75px;
+      height:75px ;
+    }
+    h6{
+      margin-top: 11vh;
+      font-size: 9px;
+    }
+  }
+  @media screen and (max-width : 736px) and (orientation : landscape) {    
+    .modal-content{
+    height: 500px;
+    width: 640px;
+    }
+  }
+  
+  @media screen and (max-width : 568px) and (orientation : landscape) {
+   /*iphone se*/
+   nav{
+    margin-top: -56px;
+  }
+  #dice{
+    margin-top: 40px;
+  }
+  h3{
+    margin-top: 50px;
+  }
+  .modal-title{
+    margin-left: 50px;
+    font-size: 36px;
+    
+    }
+    
+    .modal-content{
+    border-radius: 6%;
+    margin-left: 100px;
+    font-size: 14px;
+    height: 900px;
+    width: 359px;
+  
+    
+    }
+  
+}
+  }
+
+
